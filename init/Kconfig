@@ -961,7 +961,7 @@ config CC_OPTIMIZE_ALOT
 	bool "Use -O3"
 	
 config CC_OPTIMIZE_FAST
-	bool "Use -Ofas"
+	bool "Use -Ofast"
 
 endchoice
 
