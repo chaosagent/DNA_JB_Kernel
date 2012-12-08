@@ -107,9 +107,9 @@ struct msm_hsic_hcd {
 extern int subsystem_restart(const char *name);
 struct msm_hsic_hcd *__mehci;
 
-static bool debug_bus_voting_enabled = true;
+static bool debug_bus_voting_enabled = false;
 
-static unsigned int enable_dbg_log = 1;
+static unsigned int enable_dbg_log = 0;
 module_param(enable_dbg_log, uint, S_IRUGO | S_IWUSR);
 /*by default log ep0 and efs sync ep*/
 static unsigned int ep_addr_rxdbg_mask = 9;
@@ -843,7 +843,7 @@ static int msm_hsic_reset(struct msm_hsic_hcd *mehci)
 	return 0;
 }
 
-#define PHY_SUSPEND_TIMEOUT_USEC	(120 * 1000)
+#define PHY_SUSPEND_TIMEOUT_USEC	(100 * 1000)
 #define PHY_RESUME_TIMEOUT_USEC		(100 * 1000)
 
 #ifdef CONFIG_PM_SLEEP
