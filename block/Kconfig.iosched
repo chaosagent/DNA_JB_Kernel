@@ -75,6 +75,14 @@ config IOSCHED_ROW
 	  according to queue priority.
 	  Most suitable for mobile devices.
 
+config IOSCHED_FIOPS
+	tristate "IOPS based I/O scheduler"
+	default y
+	---help---
+	  This is an IOPS based I/O scheduler. It will try to distribute
+          IOPS equally among all processes in the system. It's mainly for
+          Flash based storage.
+
 choice
 	prompt "Default I/O scheduler"
 	default DEFAULT_CFQ
@@ -97,6 +105,9 @@ choice
 	config DEFAULT_ROW
 		bool "ROW" if IOSCHED_ROW=y
 
+	config DEFAULT_FIOPS
+		bool "FIOPS" if IOSCHED_FIOPS=y
+
 endchoice
 
 config DEFAULT_IOSCHED
@@ -106,6 +117,7 @@ config DEFAULT_IOSCHED
 	default "noop" if DEFAULT_NOOP
 	default "sio" if DEFAULT_SIO
 	default "row" if DEFAULT_ROW
+	default "fiops" if DEFAULT_FIOPS
 
 endmenu
 
