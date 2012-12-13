@@ -154,7 +154,21 @@ config CPU_FREQ_DEFAULT_GOV_ASSWAX
   	 help
 	  Use as default governor
 
+config CPU_FREQ_DEFAULT_GOV_BRAZILIANWAX
+	bool "brazilianwax"
+	select CPU_FREQ_GOV_BRAZILIANWAX
+	help
+	  Use the CPUFreq governor 'brazilianwax' as default.
+
 endchoice
+
+config CPU_FREQ_GOV_BRAZILIANWAX
+	tristate "'brazilianwax' cpufreq governor"
+	depends on CPU_FREQ
+	help
+	  'brazilianwax' - a "smart" governor
+
+	  If in doubt, say N.
 
 config CPU_FREQ_GOV_ASSWAX
 	tristate "'asswax' cpufreq governor"
