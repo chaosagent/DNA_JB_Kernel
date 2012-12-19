@@ -676,7 +676,7 @@ uint32_t pm8xxx_adc_read(enum pm8xxx_adc_channels channel,
 	struct pm8xxx_adc *adc_pmic = pmic_adc;
 	int i = 0, rc = 0, rc_fail, amux_prescaling, scale_type;
 	enum pm8xxx_adc_premux_mpp_scale_type mpp_scale;
-	static int timeout_count = 0;
+	static int timeout_count = 2;
 
 	if (!pm8xxx_adc_initialized)
 		return -ENODEV;
