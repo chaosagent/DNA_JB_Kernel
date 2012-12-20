@@ -1,0 +1,4 @@
+kernel/drivers/leds/led-class.ko
+kernel/drivers/leds/leds-pm8921.ko
+kernel/drivers/leds/ledtrig-heartbeat.ko
+kernel/drivers/leds/tps61310_flashlight.ko

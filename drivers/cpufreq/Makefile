@@ -17,6 +17,22 @@ obj-$(CONFIG_CPU_FREQ_GOV_BADASS)		+= cpufreq_badass.o
 obj-$(CONFIG_CPU_FREQ_GOV_SAVAGEDZEN)		+= cpufreq_savagedzen.o
 obj-$(CONFIG_CPU_FREQ_GOV_ASSWAX)		+= cpufreq_asswax.o
 obj-$(CONFIG_CPU_FREQ_GOV_BRAZILIANWAX) += cpufreq_brazilianwax.o
+obj-$(CONFIG_CPU_FREQ_GOV_KTOONSERVATIVE) += cpufreq_ktoonservative.o
+obj-$(CONFIG_CPU_FREQ_GOV_ADAPTIVE)	+= cpufreq_adaptive.o
+obj-$(CONFIG_CPU_FREQ_GOV_PEGASUSQ)	+= cpufreq_pegasusq.o
+obj-$(CONFIG_CPU_FREQ_GOV_LAZY)    	+= cpufreq_lazy.o
+obj-$(CONFIG_CPU_FREQ_GOV_LULZACTIVE)	+= cpufreq_lulzactive.o
+obj-$(CONFIG_CPU_FREQ_GOV_WHEATLEY)	+= cpufreq_wheatley.o
+obj-$(CONFIG_CPU_FREQ_GOV_SCARY)  	+= cpufreq_scary.o
+obj-$(CONFIG_CPU_FREQ_GOV_SLEEPY)  	+= cpufreq_sleepy.o
+obj-$(CONFIG_CPU_FREQ_GOV_LAGFREE)  	+= cpufreq_lagfree.o
+obj-$(CONFIG_CPU_FREQ_GOV_SUPERBAD)  	+= cpufreq_superbad.o
+obj-$(CONFIG_CPU_FREQ_GOV_VIRTUOUS)   	+= cpufreq_virtuous.o
+obj-$(CONFIG_CPU_FREQ_GOV_SMOOTHASS)    += cpufreq_smoothass.o
+obj-$(CONFIG_CPU_FREQ_GOV_ABYSSPLUG)	+= cpufreq_abyssplug.o
+obj-$(CONFIG_CPU_FREQ_GOV_HYPER)  	+= cpufreq_HYPER.o
+obj-$(CONFIG_CPU_FREQ_GOV_SLP) += cpufreq_slp.o
+
 
 # CPUfreq cross-arch helpers
 obj-$(CONFIG_CPU_FREQ_TABLE)		+= freq_table.o

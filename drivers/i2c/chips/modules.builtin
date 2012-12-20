@@ -1,0 +1,8 @@
+kernel/drivers/i2c/chips/pn544.ko
+kernel/drivers/i2c/chips/tfa9887.ko
+kernel/drivers/i2c/chips/tpa6185.ko
+kernel/drivers/i2c/chips/rt5501.ko
+kernel/drivers/i2c/chips/cm3629.ko
+kernel/drivers/i2c/chips/akm8963.ko
+kernel/drivers/i2c/chips/r3gd20.ko
+kernel/drivers/i2c/chips/bma250_bosch.ko
